@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced6b7d48d71005419654d75df8aba3a, type: 3}
+  m_Name: OtoyaMain
+  m_EditorClassIdentifier: 
+  csvFile: {fileID: 4900000, guid: db34667d6cfec2d40961d34135eb4cb7, type: 3}
+  scenarios:
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 0}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C801"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 0}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C802"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 2
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C803"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 3
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+    subCharacter02Image: {fileID: 21300000, guid: 71fa5ed58238cbc4a869bae7cfcf73f6, type: 3}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C804"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 0}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C805"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 0}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C806"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 0}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C807"
+    choies: 

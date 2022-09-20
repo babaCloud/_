@@ -1,0 +1,8 @@
+TalkingCharacterName,TalkingCharacterCount ,MainCharacter, SubCharacter,SubCharacte,BackImage, Scenario ,Choies
+音也,1,Image/Character/01/otoya,,,Image/BackImage/test,デモテキスト01,
+音也,1,Image/Character/01/otoya,,,Image/BackImage/test,デモテキスト02,
+音也,2,Image/Character/01/otoya,Image/Character/02/masato,,Image/BackImage/test,デモテキスト03,
+音也,3,Image/Character/01/otoya,Image/Character/02/masato,Image/Character/03/natsuki,Image/BackImage/test,デモテキスト04,
+音也,1,Image/Character/01/otoya,,,Image/BackImage/test,デモテキスト05,
+音也,1,Image/Character/01/otoya,,,Image/BackImage/test,デモテキスト06,
+音也,1,Image/Character/01/otoya,,,Image/BackImage/test,デモテキスト07,
