@@ -1,7 +1,8 @@
-锘縏alkingCharacterName,TalkingCharacterCount ,MainCharacter, SubCharacter,SubCharacte,BackImage, Scenario ,Choies
-闊充篃,1,Image/Character/01/otoya,,,Image/BackImage/test,閬告姙鑲_01,
-闊充篃,1,Image/Character/01/otoya,,,Image/BackImage/test,閬告姙鑲_02,
-闊充篃,2,Image/Character/01/otoya,Image/Character/02/masato,,Image/BackImage/test,閬告姙鑲_01,
-闊充篃,3,Image/Character/01/otoya,Image/Character/02/masato,Image/Character/03/natsuki,Image/BackImage/test,閬告姙鑲_02,
-闊充篃,1,Image/Character/01/otoya,,,Image/BackImage/test,閬告姙鑲_01,
-闊充篃,1,Image/Character/01/otoya,,,Image/BackImage/test,閬告姙鑲_02,a b c
+TalkingCharacterName,TalkingCharacterCount ,MainCharacter, SubCharacter,SubCharacte,BackImage, Scenario ,Choies
+壒栫,1,Image/Character/01/otoya,,,Image/BackImage/test,僨儌僥僉僗僩01,
+壒栫,1,Image/Character/01/otoya,,,Image/BackImage/test,僨儌僥僉僗僩02,
+壒栫,2,Image/Character/01/otoya,Image/Character/02/masato,,Image/BackImage/test,僨儌僥僉僗僩03,
+壒栫,3,Image/Character/01/otoya,Image/Character/02/masato,Image/Character/03/natsuki,Image/BackImage/test,僨儌僥僉僗僩04,
+壒栫,1,Image/Character/01/otoya,,,Image/BackImage/test,僨儌僥僉僗僩05,
+壒栫,1,Image/Character/01/otoya,,,Image/BackImage/test,僨儌僥僉僗僩06,
+壒栫,1,Image/Character/01/otoya,,,Image/BackImage/test,僨儌僥僉僗僩07,

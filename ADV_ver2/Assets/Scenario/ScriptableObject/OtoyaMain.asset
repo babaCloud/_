@@ -15,61 +15,112 @@ MonoBehaviour:
   mainCsvFile: {fileID: 4900000, guid: db34667d6cfec2d40961d34135eb4cb7, type: 3}
   choiesCsvFile:
   - {fileID: 4900000, guid: 38b232befec4e604494186a49a567c30, type: 3}
+  - {fileID: 4900000, guid: 38b232befec4e604494186a49a567c30, type: 3}
   scenarios:
-  - talkingCharacterName: "\u9AFB\uFF73\u8375?1"
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
     subCharacter01Image: {fileID: 0}
     subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C801"
     choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
     subCharacter01Image: {fileID: 0}
     subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C802"
     choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 2
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+    subCharacter02Image: {fileID: 0}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C803"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 3
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+    subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+    subCharacter02Image: {fileID: 21300000, guid: 71fa5ed58238cbc4a869bae7cfcf73f6, type: 3}
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C804"
+    choies: 
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
     subCharacter01Image: {fileID: 0}
     subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C805"
     choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
     subCharacter01Image: {fileID: 0}
     subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C806"
     choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
+  - talkingCharacterName: "\u97F3\u4E5F"
+    talkingCharacterCount: 1
+    mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
     subCharacter01Image: {fileID: 0}
     subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
+    backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+    scenario: "\u30C7\u30E2\u30C6\u30AD\u30B9\u30C807"
     choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
-    subCharacter01Image: {fileID: 0}
-    subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
-    choies: 
-  - talkingCharacterName: 
-    talkingCharacterCount: 0
-    mainCharacterImage: {fileID: 0}
-    subCharacter01Image: {fileID: 0}
-    subCharacter02Image: {fileID: 0}
-    backImage: {fileID: 0}
-    scenario: 
-    choies: 
-  choies: []
+  choies:
+  - question: 
+    choiesSet:
+    - answer: a
+      choiesScenario:
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 1
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 0}
+        subCharacter02Image: {fileID: 0}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2a_01"
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 1
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 0}
+        subCharacter02Image: {fileID: 0}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2a_02"
+    - answer: b
+      choiesScenario:
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 2
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+        subCharacter02Image: {fileID: 0}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2b_01"
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 3
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 21300000, guid: 5809df191324123478b5c68758eb7553, type: 3}
+        subCharacter02Image: {fileID: 21300000, guid: 71fa5ed58238cbc4a869bae7cfcf73f6, type: 3}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2b_02"
+    - answer: c
+      choiesScenario:
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 1
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 0}
+        subCharacter02Image: {fileID: 0}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2c_01"
+      - talkingCharacterName: "\u97F3\u4E5F"
+        talkingCharacterCount: 1
+        mainCharacterImage: {fileID: 21300000, guid: faa1afef8930ab541b7cbbb38dc538b3, type: 3}
+        subCharacter01Image: {fileID: 0}
+        subCharacter02Image: {fileID: 0}
+        backImage: {fileID: 21300000, guid: ac44ee02a2ff3194481fb9ad0a29a5de, type: 3}
+        scenario: "\u9078\u629E\u80A2c_02"

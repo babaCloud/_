@@ -5,12 +5,9 @@ using System.IO;
 using System.Text;
 using UnityEditor;
 
-[CreateAssetMenu(menuName = "ScenarioData")]
-
 [System.Serializable]
 public class ChoiseScenario 
 {
-    public string choies;
     public string talkingCharacterName = "";
     public int talkingCharacterCount = 0;
     public Sprite mainCharacterImage = null;
@@ -23,7 +20,7 @@ public class ChoiseScenario
 public class Choies
 {
     public string answer;
-    public ChoiseScenario[] choiesScenario = new ChoiseScenario[3];
+    public List<ChoiseScenario> choiesScenario = new List<ChoiseScenario>();
 }
 [System.Serializable]
 public class ChoiesSet
@@ -46,12 +43,17 @@ public class ScenarioSet
     public string choies = "";
 }
 
+[CreateAssetMenu(menuName = "ScenarioData")]
 public class ScenarioData : ScriptableObject
 {
+    [Header("メインのシナリオCSV")]
     public TextAsset mainCsvFile;
+    [Header("選択肢のシナリオCSV")]
     public TextAsset[] choiesCsvFile;
-  
-    public List<ScenarioSet> scenarios = new List<ScenarioSet>(); 
+
+    [Header("メインのシナリオデータ")]
+    public List<ScenarioSet> scenarios = new List<ScenarioSet>();
+    [Header("選択肢のシナリオデータ")]
     public List<ChoiesSet> choies = new List<ChoiesSet>();
 
     private List<string[]> mainCsvData = new List<string[]>();
@@ -96,16 +98,14 @@ public class ScenarioData : ScriptableObject
 
     void ReadChoiesCSV()
     {
+       
+        //話分
         choies.Clear();
-        Debug.Log(choiesCsvFile.Length);
-        for (int j = 0; j < choiesCsvFile.Length; j++)
-        {
-            
-            choies.Add(new ChoiesSet());
-        }
-
         for (int i = 0; i < choiesCsvFile.Length; i++)
         {
+            choiesCsvData.Clear();
+            choies.Add(new ChoiesSet());
+
             StringReader reader = new StringReader(ChangeMojiCode(choiesCsvFile[i]));
             while (reader.Peek() != -1)
             {
@@ -113,35 +113,52 @@ public class ScenarioData : ScriptableObject
                 choiesCsvData.Add(line.Split(','));
             }
 
+            //選択肢の個数
             int j = 0;
-            while(j < 3)
+            int lineCount = 1;
+            while (j < 3)
             {
-                for (int I = 1; I < choiesCsvData.Count; I++)
-                {
-                    choies[i].choiesSet[j].choiesScenario[I].choies = choiesCsvData[I][0];
-                    choies[i].choiesSet[j].choiesScenario[I].talkingCharacterName = choiesCsvData[I][1];
-                    choies[i].choiesSet[j].choiesScenario[I].talkingCharacterCount = int.Parse(choiesCsvData[I][2]);
-                    choies[i].choiesSet[j].choiesScenario[I].mainCharacterImage = Resources.Load<Sprite>(choiesCsvData[I][3]);
-                    choies[i].choiesSet[j].choiesScenario[I].subCharacter01Image = Resources.Load<Sprite>(choiesCsvData[I][4]);
-                    choies[i].choiesSet[j].choiesScenario[I].subCharacter02Image = Resources.Load<Sprite>(choiesCsvData[I][5]);
-                    choies[i].choiesSet[j].choiesScenario[I].backImage = Resources.Load<Sprite>(choiesCsvData[I][6]);
-                    choies[i].choiesSet[j].choiesScenario[I].scenario = choiesCsvData[I][7];
+                choies[i].choiesSet.Add(new Choies());
+                choies[i].choiesSet[j].answer = choiesCsvData[lineCount][0];
 
-                    if (choiesCsvData[I + 1][0] != "")
+                for (int I = 0; I < choiesCsvData.Count; I++)
+                {
+                    choies[i].choiesSet[j].choiesScenario.Add(new ChoiseScenario());
+
+                    choies[i].choiesSet[j].choiesScenario[I].talkingCharacterName = choiesCsvData[lineCount][1];
+                    choies[i].choiesSet[j].choiesScenario[I].talkingCharacterCount = int.Parse(choiesCsvData[lineCount][2]);
+                    choies[i].choiesSet[j].choiesScenario[I].mainCharacterImage = Resources.Load<Sprite>(choiesCsvData[lineCount][3]);
+                    choies[i].choiesSet[j].choiesScenario[I].subCharacter01Image = Resources.Load<Sprite>(choiesCsvData[lineCount][4]);
+                    choies[i].choiesSet[j].choiesScenario[I].subCharacter02Image = Resources.Load<Sprite>(choiesCsvData[lineCount][5]);
+                    choies[i].choiesSet[j].choiesScenario[I].backImage = Resources.Load<Sprite>(choiesCsvData[lineCount][6]);
+                    choies[i].choiesSet[j].choiesScenario[I].scenario = choiesCsvData[lineCount][7];
+
+                    //次の行があるか
+                    if (lineCount + 1 == choiesCsvData.Count)
                     {
-                        j++;
+                        j = 3;
                         break;
                     }
+
+                    //次の行は違うシナリオではないか、そうなら入れるところを変える
+                    if (choiesCsvData[lineCount + 1][0] != "")
+                    {
+                        j++;
+                        lineCount++;
+                        break;
+                    }
+
+                    lineCount++;
                 }
 
-                
             }
-            
+
         }
     }
 
     string ChangeMojiCode(TextAsset text)
     {
+      
         byte[] loadData;
 
         using (FileStream fileStream = new FileStream(AssetDatabase.GetAssetPath(text),
