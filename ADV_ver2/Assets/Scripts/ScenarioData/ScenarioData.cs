@@ -13,6 +13,9 @@ public class ChoiseScenario
     public Sprite mainCharacterImage = null;
     public Sprite subCharacter01Image = null;
     public Sprite subCharacter02Image = null;
+    public int mainCharacterPos = 0;
+    public int subCharacter01Pos = 0;
+    public int subCharacter02Pos = 0;
     public Sprite backImage = null;
     public string scenario = "";
 }
@@ -38,6 +41,9 @@ public class ScenarioSet
     public Sprite mainCharacterImage = null;
     public Sprite subCharacter01Image = null;
     public Sprite subCharacter02Image = null;
+    public int mainCharacterPos = 0;
+    public int subCharacter01Pos = 0;
+    public int subCharacter02Pos = 0;
     public Sprite backImage = null;
     public string scenario = "";
     public string choies = "";
@@ -89,9 +95,12 @@ public class ScenarioData : ScriptableObject
             scenarios[i - 1].mainCharacterImage = Resources.Load<Sprite>(mainCsvData[i][2]);
             scenarios[i - 1].subCharacter01Image = Resources.Load<Sprite>(mainCsvData[i][3]);
             scenarios[i - 1].subCharacter02Image = Resources.Load<Sprite>(mainCsvData[i][4]);
-            scenarios[i - 1].backImage = Resources.Load<Sprite>(mainCsvData[i][5]);
-            scenarios[i - 1].scenario = mainCsvData[i][6];
-            scenarios[i - 1].choies = mainCsvData[i][7];
+            scenarios[i - 1].mainCharacterPos = int.Parse(mainCsvData[i][5]);
+            scenarios[i - 1].subCharacter01Pos = int.Parse(mainCsvData[i][6]);
+            scenarios[i - 1].subCharacter02Pos = int.Parse(mainCsvData[i][7]);
+            scenarios[i - 1].backImage = Resources.Load<Sprite>(mainCsvData[i][8]);
+            scenarios[i - 1].scenario = mainCsvData[i][9];
+            scenarios[i - 1].choies = mainCsvData[i][10];
 
         }
     }
@@ -130,8 +139,11 @@ public class ScenarioData : ScriptableObject
                     choies[i].choiesSet[j].choiesScenario[I].mainCharacterImage = Resources.Load<Sprite>(choiesCsvData[lineCount][3]);
                     choies[i].choiesSet[j].choiesScenario[I].subCharacter01Image = Resources.Load<Sprite>(choiesCsvData[lineCount][4]);
                     choies[i].choiesSet[j].choiesScenario[I].subCharacter02Image = Resources.Load<Sprite>(choiesCsvData[lineCount][5]);
-                    choies[i].choiesSet[j].choiesScenario[I].backImage = Resources.Load<Sprite>(choiesCsvData[lineCount][6]);
-                    choies[i].choiesSet[j].choiesScenario[I].scenario = choiesCsvData[lineCount][7];
+                    choies[i].choiesSet[j].choiesScenario[I].mainCharacterPos = int.Parse(choiesCsvData[lineCount][6]);
+                    choies[i].choiesSet[j].choiesScenario[I].subCharacter01Pos = int.Parse(choiesCsvData[lineCount][7]);
+                    choies[i].choiesSet[j].choiesScenario[I].subCharacter02Pos = int.Parse(choiesCsvData[lineCount][8]);
+                    choies[i].choiesSet[j].choiesScenario[I].backImage = Resources.Load<Sprite>(choiesCsvData[lineCount][9]);
+                    choies[i].choiesSet[j].choiesScenario[I].scenario = choiesCsvData[lineCount][10];
 
                     //次の行があるか
                     if (lineCount + 1 == choiesCsvData.Count)

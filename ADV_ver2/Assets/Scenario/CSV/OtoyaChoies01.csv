@@ -1,7 +1,7 @@
-Choies,TalkingCharacterName,TalkingCharacterCount ,MainCharacter, SubCharacter,SubCharacte,BackImage, Scenario 
-a,音也,1,Image/Character/01/otoya,,,Image/BackImage/test,選択肢a_01
-,音也,1,Image/Character/01/otoya,,,Image/BackImage/test,選択肢a_02
-b,音也,2,Image/Character/01/otoya,Image/Character/02/masato,,Image/BackImage/test,選択肢b_01
-,音也,3,Image/Character/01/otoya,Image/Character/02/masato,Image/Character/03/natsuki,Image/BackImage/test,選択肢b_02
-c,音也,1,Image/Character/01/otoya,,,Image/BackImage/test,選択肢c_01
-,音也,1,Image/Character/01/otoya,,,Image/BackImage/test,選択肢c_02
+Choies,TalkingCharacterName,TalkingCharacterCount ,MainCharacter, SubCharacter,SubCharacte,MainCharacterPos,SubCharacter01Pos,SubCharacter02Pos,BackImage, Scenario 
+a,音也,1,Image/Character/01/otoya,,,0,-1,-1,Image/BackImage/test,選択肢a_01
+,音也,1,Image/Character/01/otoya,,,0,-1,-1,Image/BackImage/test,選択肢a_02
+b,音也,2,Image/Character/01/otoya,Image/Character/02/masato,,1,2,-1,Image/BackImage/test,選択肢b_01
+,音也,3,Image/Character/01/otoya,Image/Character/02/masato,Image/Character/03/natsuki,3,4,0,Image/BackImage/test,選択肢b_02
+c,音也,1,Image/Character/01/otoya,,,1,-1,-1,Image/BackImage/test,選択肢c_01
+,音也,1,Image/Character/01/otoya,,,1,-1,-1,Image/BackImage/test,選択肢c_02
